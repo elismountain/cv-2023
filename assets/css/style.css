@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: grey;
+  }
+
+
+
+.header {
+  height: 13rem;
+  margin: 0;
+  padding-right: 0;
+  padding-left: 0;
+  top: 13px;
+}
+
+.header__navigation {
+  width: 144rem;
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: 2.6rem;
+  display: flex;
+
+} 
+
+.header__navigation--list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  width: 100%;
+  min-height: 5.6rem;
+  padding-left: 58%;
+  text-decoration: none;
+  position: absolute;
+  top: 3rem;
+}
+
+.header__navigation--element {
+  width: 15rem;
+  text-decoration: none;
+  font-size: 2.3rem;
+  line-height: 6rem;
+  padding: 0 1rem 0 0;
+  
+}
+
+.header__navigation--element:hover {
+  color:orangered;
+  font-weight: bold;
+}
+
+/* .header__navigation--about {
+
+
+}
+
+
+.header__navigation--contact {
+
+} */
+
+.header__navigation--cv {
+  width: 18rem;
+  font-style: normal;
+  font-weight: normal;
+  color: grey;
+}
+
+.header__navigation--cv:hover {
+  color:orangered;
+  font-weight: bold;
+}
+
+
+.header__navigation--link {
+  text-decoration: none;
+  color: grey;
+}
+
+.header__navigation--link:hover {
+  color:orangered;
+  font-weight: bold;
+}
