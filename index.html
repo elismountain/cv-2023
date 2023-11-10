@@ -5,53 +5,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lernantino // Web Developer</title>
+  <meta name="title" content="Olga Avramenko| front-end developer" />
+  <meta name="description" content="Olga Avramenko is a web-developer based in Brighton, UK"/>
+  <meta name="author" content="Olga Avramenko" />
   <link rel="stylesheet" href="./assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap&subset=latin-ext"
+  rel="stylesheet"
+/>
 </head>
 
 <body>
   <!-- main logo / nav -->
-  <header class="header">
-    <h1 class="header__name">Olga Avramenko</h1>
-    <nav>
-      <ul>
-        <li class="projects__list">
-          <a href="#about-me">About me</a>
-        </li>
-        <li class="projects__list">
-          <a href="#work-section">Projects</a>
-        </li>
-        <li class="projects__list">
-          <a href="#contacts-section">Contacts</a>
-        </li>
-        <li class="projects__list">
-          <a href="#resume">CV</a>
-        </li>
-      </ul>
-    </nav>
 
-    <section class="banner">
 
-      <div>
-        <h2>Download my CV:</h2>
-        <a href="#" class="btn btn--white btn--animated">
-          here
-        </a>
-      </div>
-    </section>
-  </header>
+    <header class="header">
+      <nav class="header__navigation">
+        <ul class="header__navigation--list">
+          <li class="header__navigation--element header__navigation--about">
+            <a href="#about" aria-label="Read about Olga"></a> About me</li>
+          <li class="header__navigation--element header__navigation--contact">
+            <a href="#contact" aria-label="Olga's contacts"></a> Contact </li>
+          <li class="header__navigation--element header__navigation--cv">
+            <a href="./file/CV.pdf" class ="header__navigation--link" download>
+                Resume
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
 
 
-  <main class="page-=wrapper">
+  <!-- <main class="page-=wrapper"> -->
     <!-- about me -->
-    <section class="page__section" id="about-me">
+    <!-- <section class="page__section" id="about">
       <h2>About Me</h2>
       <p class="pade__section--about"></p>
-    </section>
+    </section> -->
 
     <!-- portfolio container -->
-    <section class="page__section" id="work-section">
+    <!-- <section class="page__section" id="work">
       <h2>Work</h2>
       <div class="pade__section--list projects">
         <ul>
@@ -73,10 +66,10 @@
         </ul>
       </div>
 
-    </section>
+    </section> -->
 
     <!-- contact -->
-    <section class="page__section contact" id="#contacts-section">
+    <!-- <section class="page__section contact" id="#contact">
       <h2>Contact Me</h2>
       <div class="contacts">
         <ul class="contacts__media-list">
@@ -100,12 +93,13 @@
         </ul>
       </div>
 
-    </section>
-
+    </section> -->
+<!-- 
     <section class="page__section " id="#resume">
       <h2>Resume</h2>
-    </section>
+    </section> -->
   </main>
+
 </body>
 
 </html>
