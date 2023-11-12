@@ -108,7 +108,61 @@ html {
 
 .page__main--wrapper {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
 }
+
+.page__section {
+  display: flex;
+}
+
+.projects__title {
+  color: black;
+  font-size: 3rem;
+}
+
+.projects__list {
+  font-size: 4rem;
+  text-decoration: none;
+}
+
+.projects__list--wrapper {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.portfolio__section {
+  display: flex;
+}
+
+.projects__list--animated {
+  font-size: 4rem;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+.projects__list--animated:hover {
+  animation: moveInLeft;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  color: blue;
+
+}
+
+.projects__list--link {
+  text-decoration: none;
+  color: black;
+}
+
+.projects__list--link:hover {
+  color: blue;
+}
+
+
+
+
 
 
 
@@ -176,3 +230,24 @@ html {
 .iconify:active {
   opacity: 0.5;
 }
+
+/* effects */
+
+@keyframes moveInLeft {
+  0% {
+      opacity: 0;
+      transform: translateX(-2rem);
+  }
+
+  50% {
+      transform: translateX(8rem);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+  
+}
+
+
