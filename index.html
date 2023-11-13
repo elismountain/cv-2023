@@ -21,11 +21,11 @@
   <header class="header">
     <nav class="header__navigation">
       <ul class="header__navigation--list">
-        <li class="header__navigation--element header__navigation--about">
-          <a href="#about" aria-label="Read about Olga"></a> About me</li>
-        <li class="header__navigation--element header__navigation--contact">
-          <a href="#contact" aria-label="Olga's contacts"></a> Contact </li>
-        <li class="header__navigation--element header__navigation--cv">
+        <li class="header__navigation--element">
+          <a href="./pages/about.html" aria-label="Read about Olga" class="header__navigation__contact--link"> About me </a> </li>
+        <li class="header__navigation--element">
+          <a href="#contact"  aria-label="Olga's contacts" class="header__navigation__contact--link"> Contact </a> </li>
+        <li class="header__navigation--element">
           <a href="./file/CV.pdf" class="header__navigation--link" download>
             Resume
           </a>
@@ -38,30 +38,34 @@
 
   <main class="page__main--wrapper">
     <!-- about me -->
-    <section class="page__section" id="about">
+    <section class="page__section">
       <h2>About Me</h2>
       <p class="pade__section--about"></p>
     </section>
 
     <!-- portfolio container -->
-    <section class="page__section" id="work">
-      <h2>Work</h2>
-      <div class="pade__section--list projects">
-        <ul>
+    <section class="portfolio__section" id="work">
+
+
+      <div class="projects__section--list projects">
+        <ul class="projects__list--wrapper">
           <li class="projects__list">
-            <a href="#"> Project 1 </a>
+            <p class="projects__title">Selected Projects:</p>
           </li>
-          <li class="projects__list">
-            <a href="#">Project 2 </a>
+          <li class="projects__list projects__list--animated">
+            <a class="projects__list--link" href="#"> Project 1 >> </a>
           </li>
-          <li class="projects__list">
-            <a href="#">Project 3 </a>
+          <li class="projects__list projects__list--animated">
+            <a class="projects__list--link" href="#">Project 2 >> </a>
           </li>
-          <li class="projects__list">
-            <a href="#">Project 4 </a>
+          <li class="projects__list projects__list--animated">
+            <a class="projects__list--link" href="#">Project 3 >></a>
           </li>
-          <li class="projects__list">
-            <a href="#">Project 5 </a>
+          <li class="projects__list projects__list--animated">
+            <a class="projects__list--link" href="#">Project 4 >> </a>
+          </li>
+          <li class="projects__list projects__list--animated">
+            <a  class="projects__list--link" href="#">Project 5 >> </a>
           </li>
         </ul>
       </div>
@@ -94,7 +98,7 @@
       </div>
     </section>
     <section class="copywrite"> 
-      <p class="copywrite__link"> Build by Olga A </p>
+      <p class="copywrite__link"> Built by Olga A </p>
     </section>
   </footer>
   <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
