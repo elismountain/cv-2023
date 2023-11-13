@@ -374,9 +374,6 @@ html {
   display: flex;
 }
 
-.bio {
-  display: flex;
-}
 
 .footer__wide {
 
@@ -453,8 +450,6 @@ html {
 }
 
 
-
-
 .footer__projects__list--animated:hover {
   animation: moveInLeftFooter;
   animation-duration: 1.5s;
@@ -513,6 +508,37 @@ html {
   font-size: 1.5rem;
   font-weight: bold;
 }
+
+/* ABOUT ME */
+
+.bio {
+  margin: 0 auto;
+  font-size: 2rem;
+  color: #3c3c3c;
+  max-width: 90rem;
+  padding: 4rem;
+  line-height: 3.5rem;
+  /* letter-spacing: 0.07rem; */
+}
+
+.bio__text {
+  padding-top: 2rem;
+}
+
+.bio-list {
+  list-style: none;
+}
+
+.bio__title {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding: 0 0 0 0;
+}
+
+
+
+
 
 
 
