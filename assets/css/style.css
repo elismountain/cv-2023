@@ -518,7 +518,9 @@ html {
 }
 
 .bio__text {
-  padding-top: 2rem;
+  display: block;
+  /* padding-top: 2rem; */
+  text-align: justify;
 }
 
 .bio-list {
@@ -530,6 +532,26 @@ html {
   text-transform: uppercase;
   font-weight: normal;
   padding: 0 0 0 0;
+}
+
+.bio__img--container {
+  text-align: center;
+}
+
+.bio__img {
+  width: 20rem;
+  height: 20rem;
+}
+
+.bio__link {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+}
+
+.bio__link:hover {
+  color: #3c3c3c ;
+
 }
 
 /* page contacts */
