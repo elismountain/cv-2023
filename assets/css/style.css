@@ -34,11 +34,11 @@ html {
   padding-right: 0;
   padding-left: 0;
   top: 13px;
-  min-height: 15rem;
+  min-height: 10rem;
 }
 
 .header__navigation {
-  width: 144rem;
+  /* width: 144rem; */
   font-size: 1.4rem;
   font-weight: normal;
   line-height: 2.6rem;
@@ -53,15 +53,14 @@ html {
   margin: 0;
   width: 100%;
   min-height: 5.6rem;
-  padding-left: 58%;
+  padding-left: 60%;
   position: absolute;
   top: 3rem;
 }
 
 .header__navigation--element {
   text-decoration: none;
-  
-  width: 15rem;
+  width: 12rem;
   font-size: 2.3rem;
   line-height: 6rem;
   padding: 0 1rem 0 0;
