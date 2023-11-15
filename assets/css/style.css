@@ -357,22 +357,21 @@ html {
 
 /* effects */
 
-@keyframes moveInLeft {
+/* @keyframes moveInLeft {
   0% {
       opacity: 0;
       transform: translateX(-2rem);
   }
 
   50% {
-      transform: translateX(8rem);
+      transform: translateX(4rem);
   }
 
   100% {
       opacity: 1;
       transform: translateX(0);
   }
-  
-}
+} */
 
 
 /* PAGE ABOUT ME */
@@ -608,6 +607,39 @@ html {
   text-decoration: none;
   color: red;
 }
+
+/* photoes showing up in the hover */
+
+
+.projects__img  {
+  position: absolute;
+  z-index: -1;
+  height: 70vh;
+  opacity: 0;
+  transition: all 0.1s ease-out;
+  }
+  
+  .projects__img--cv, .projects__img--shop, .projects__img--sedona {
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+
+  .projects__list--cv:hover + .projects__img--cv {
+    opacity: 0.2;
+  }
+
+  .projects__list--shop:hover + .projects__img--shop {
+    opacity: 0.4;
+  }
+
+  .projects__list--sedona:hover + .projects__img--sedona {
+    opacity: 0.4;
+  }
+
 
 
 
