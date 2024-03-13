@@ -616,7 +616,7 @@ html {
   z-index: -1;
   height: 70vh;
   opacity: 0;
-  transition: all 0.1s ease-out;
+  transition: all 0.5s ease-out;
   }
   
   .projects__img--cv, .projects__img--shop, .projects__img--sedona {
@@ -626,6 +626,16 @@ html {
     height: 100vh;
     object-fit: cover;
   }
+
+  
+
+
+  .projects__img--fitness {
+    left: 50vw;
+    bottom: 10vh;
+    position: absolute;
+  }
+
 
 
   .projects__list--cv:hover + .projects__img--cv {
@@ -639,6 +649,11 @@ html {
   .projects__list--sedona:hover + .projects__img--sedona {
     opacity: 0.4;
   }
+
+  .projects__list--fitness:hover + .projects__img--fitness {
+    opacity: 0.4;
+  }
+
 
 
 
