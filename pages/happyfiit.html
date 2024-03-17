@@ -14,54 +14,114 @@
         rel="stylesheet" />
 </head>
 
-<body class="body--wrapper">
-    <div class="header--wrapper">
-        <div class="button__back">
-            <form action="../index.html" class="button-back--form" target="_blank"> <button class="button-back--button">&lt;</button></form>
-        </div>
+<body class="body--wrapper happyfiit--wrapper happyfiit--poligon2">
+    <div class="button__back">
+        <form action="../index.html" class="button-back--form" target="_blank"> <button class="button-back--button">&lt;</button></form>
+    </div>
+    <div >
+        
 
-        <header class="header">
-            <nav class="header__navigation">
-                <ul class="header__navigation--list">
-                    <li class="header__navigation--element">
-                        <a href="..//index.html" aria-label="Home" class="header__navigation__contact--link">
-                            Home </a> </li>
-                    <li class="header__navigation--element">
-                        <a href="about.html" aria-label="Read about Olga" class="header__navigation__contact--link">
-                            About </a> </li>
-                    <li class="header__navigation--element">
-                        <a href="contacts.html" aria-label="Olga's contacts" class="header__navigation__contact--link"> Contact </a>
-                    </li>
-                    <li class="header__navigation--element">
-                        <a href="../files/cv.pdf" class="header__navigation--link" download>
-                            Resume
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+        <header class="happyfiit__header">
+            <div class="happyfiit__logo">
+                <div class="happyfiit__logo--wrapper">
+                    <img class="happyfiit__logo--img" src="../images/favicon.ico">
+                    <h1 class="happyfiit__title">  Happy Fiit </h1>
+                </div>
+
+                <h2 class="happyfiit__descr"> Fitness app </h2>
+
+                <h2 class="happyfiit__descr--small"> build with <br> React and ExerciseDB  API</h2>
+            </div>
+            <div class="happyfiit__bg">
+                <img
+                src="../images/happyfiit2.png" alt="mobile" class="happyfiit__img2"
+                />
+            </div>
         </header>
     </div>
 
-    <main class="portfolio__main">
+    <main class="happyfiit">
 
-        <h1>  Happy Fiit </h1>
-        <p> The concept was to create a simplified fitness app that offers a range of exercises for each muscle group in the body, and promotes overall fitness. We aimed to create a platform that tracks your physical and mental well-being, enabling you to be in control of your health.</p>
-        <p> We wanted to build a user-friendly application adept at offering tailored exercises based on user input, integrating features that simplify the fitness journey. We believe fitness doesn't have to involve lengthy workouts; rather, it's the consistent day-to-day routines that change us for the better.</p>
-        <p> As a user, I want the app to suggest exercises based on the goals I choose , enabling me to perform timed exercises and track my progress, so that I can effectively target specific areas and see tangible improvements in my fitness journey.</p>
-        <p> React { useState, useEffect, useLocation}
-            Vite
-            Node.js
-            Git & Github
-            Excalidraw
-            ExerciseDB API from Rapid API
-            Material UI
-            Google Fonts
-            React Bootstrap
-            Netlify</p>
-            <p> https://github.com/elismountain/fitness-app </p>
-            <p> https://happyfiit-pj.netlify.app/ </p>
-            <p> add mobile image </p>
-            
+        
+        <section class="happyfiit__intro">
+            <div class="happyfiit__img--container">
+                <img
+                  src="../images/happyfiit.png" alt="mobile" class="happyfiit__img"
+                /> 
+              </div>
+              <div class="happyfiit__intro--right">
+                <p class="happyfiit__intro--title"> Concept </p>
+                <p class="happyfiit__intro--text"> The concept was to create a simplified fitness app that offers a range of exercises for each muscle group in the body,
+                and promotes overall fitness. I aimed to create a platform that tracks your physical and mental well-being, enabling you to be in control of your health. <br> <br>
+                I wanted to build a user-friendly application adept at offering tailored exercises based on user input, integrating features that simplify the fitness journey.
+                I believe fitness doesn't have to involve lengthy workouts, rather, it's the consistent day-to-day routines that change us for the better.</p>
+
+              </div>
+  
+        </section>
+
+        <section class="happyfiit__ecs">
+            <div class="happyfiit__ecs--left"> 
+            <p class="happyfiit__intro--title"> Wireframe </p>
+            <p class="happyfiit__ecs--text"> I started the project by creating a wireframe of the app, which helped me a lot to visualize the website's layout, define functionalities, and significantly expedite the development process. </p>
+        </div>
+            <img
+            src="../images/draw.png" alt="image" class="draw__img"
+          /> 
+
+        </section>
+
+        <section class="happyfiit__tech--wrapper">
+
+            <div class="happyfiit__tech--title" >
+                <h1 class="happyfiit__tech"> Technologies</h1>
+                <p class="happyfiit__tech--descr">  The technologies I used for this website include React, 
+                    Vite, NodeJS, Git & GitHub, Excalidraw, ExerciseDB API from Rapid API for fitness-related data, Bootstrap 
+                       and Netlify. </p>
+                <p class="happyfiit__tech--descr">  Please, see the  GitHub account of
+                    <a href="https://github.com/elismountain/fitness-app" class="git-pj__link contact__link"> HappyFiit </a> 
+                
+                <br> and the deployed project with
+                    <a href="https://happyfiit-pj.netlify.app/" class="git-pj__link contact__link"> Netlify </a> 
+                </p>  
+            </div>
+
+
+            <ul class="happyfiit__list"> 
+                <li class="happyfiit-list__item">
+                    <span class="iconify" data-icon="simple-icons:react" data-inline="false" style="color:black;"></span>
+                     React
+                </li>
+                <li class="happyfiit-list__item">
+                    <span class="iconify" data-icon="simple-icons:vite" data-inline="false" style="color:black;"></span>
+                     Vite
+                </li>
+                <li class="happyfiit-list__item">
+                    <span class="iconify" data-icon="simple-icons:npm" data-inline="false" style="color:black;"></span>
+                     NodeJS
+                </li>
+                <li class="happyfiit-list__item">
+                    <span class="iconify" data-icon="simple-icons:github" data-inline="false" style="color:black;"></span>
+                     Git & Github
+                </li>
+                <li class="happyfiit-list__item">
+                    <span class="iconify" data-icon="simple-icons:excalidraw" data-inline="false" style="color:black;"></span>
+                     Excalidraw
+                </li>
+                <li class="happyfiit-list__item">
+                    <span class="iconify" data-icon="simple-icons:rapid" data-inline="false" style="color:black;"></span> 
+                    ExerciseDB
+                </li>
+                <li class="happyfiit-list__item">
+                    <span class="iconify" data-icon="simple-icons:bootstrap" data-inline="false" style="color:black;"></span>
+                     Bootstrap
+                </li>
+                <li class="happyfiit-list__item">
+                    <span class="iconify" data-icon="simple-icons:netlify" data-inline="false" style="color:black;"></span>
+                     Netlify
+                </li>
+        </ul>
+        </section>          
     </main>
 
 
@@ -86,6 +146,9 @@
                 </li>
                 <li class="footer__projects__list footer__projects__list--animated">
                     <a class="footer__projects__list--link" href="./mishka.html">Mishka online store </a>
+                </li>
+                <li class="footer__projects__list footer__projects__list--animated">
+                    <a class="footer__projects__list--link" href="./mishka.html"> Online Zoo </a>
                 </li>
             </ul>
         </div>
