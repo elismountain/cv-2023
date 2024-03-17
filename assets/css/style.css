@@ -518,6 +518,7 @@ html {
   font-size: 1.5rem;
   font-weight: normal;
   color: #fff;
+  cursor: default;
 }
 
 .copywrite__link--footer:hover {
@@ -699,7 +700,7 @@ html {
       flex-direction: row;
       justify-content: space-around;
       max-width: 180rem;
-      padding-bottom: 10rem;
+      padding-bottom: 5rem;
 
     }
 
@@ -839,6 +840,7 @@ html {
       width: 14rem;
       height: 14rem;
       font-size: 1.8rem;
+      color: #fff;
     }
 
     .happyfiit__tech--title {
