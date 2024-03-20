@@ -1,182 +1,198 @@
-/* footer  */
 
+  
+  // footer
 .footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  
-  .footer__contact {
-    display: flex;
-  }
-  
-  .copywrite {
-    display: flex;
-    padding-right: 20rem;
-  
-  }
-  
-  .copywrite__link {
-    font-size: 1.5rem;
-    font-weight: normal;
-  }
-  
-  .copywrite__link:hover {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: black;
-  }
-  
-  
-  .contacts__media-list {
-    display: flex;
-    text-decoration: none;
-    align-content: flex-end;
-    list-style-type: none;
-    padding: 0;
-    justify-content: left;
-    padding-left: 10rem;
-    
-  }
-  
-  
-  .contacts__media-item {
-    text-decoration: none;
-    padding-left: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer__contact {
+  display: flex;
+}
+
+.copywrite {
+  display: flex;
+  padding-right: 2rem; // Adjust as needed
+}
+
+.copywrite__link {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.copywrite__link:hover {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+}
+
+.contacts__media-list {
+  display: flex;
+  text-decoration: none;
+  align-content: flex-end;
+  list-style-type: none;
+  padding: 0;
+  justify-content: left;
+  padding-left: 4rem; // Adjust as needed
+}
+
+.contacts__media-item {
+  text-decoration: none;
+  padding-left: 2rem; // Adjust as needed
+}
+
+.footer__wide {
+  background-color: #555;
+}
+
+.footer__wide--wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem 0 1rem; // Adjust as needed
+}
+
+.footer__wide--projects {
+  display: flex;
+}
+
+.menu__wide {
+  display: flex;
+}
+
+.wide__footer__contacts--wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-left: 1rem; // Adjust as needed
+}
+
+.footer__projects__list--wrapper {
+  text-decoration: none;
+  list-style: none;
+  font-size: 3rem;
+}
+
+.footer__projects__title {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  font-size: 3.5rem;
+  margin: 0 0 1rem 0; // Adjust as needed
+}
+
+.footer__navigation--list {
+  text-decoration: none;
+  list-style: none;
+  font-size: 3rem;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.footer__navigation--element {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 2.5rem; // Adjust as needed
+  padding-right: 2rem; // Adjust as needed
+  text-align: right;
+  margin-bottom: 1rem; // Adjust as needed
+}
+
+.footer__navigation__contact--link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer__navigation--element:hover {
+  animation: moveInRightFooter;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+}
+
+.footer__projects__list--animated:hover {
+  animation: moveInLeftFooter;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+}
+
+.footer__projects__list--link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+}
+
+@keyframes moveInLeftFooter {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
   }
 
-  .footer__wide {
-    background-color: #555;
+  50% {
+    transform: translateX(2rem); // Adjust as needed
   }
-  
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRightFooter {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-2rem); // Adjust as needed
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.copywrite__link--footer {
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: #fff;
+  cursor: default;
+}
+
+.copywrite__link--footer:hover {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+// Media Queries for Mobile Responsiveness
+@media screen and (max-width: 768px) {
   .footer__wide--wrapper {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 10rem 0 10rem;
-  
+    flex-direction: column;
+    padding: 0 1rem 0 1rem; // Adjust as needed
   }
-  
-  
-  .footer__wide--projects {
-    display: flex;
-  
-  }
-  
-  .menu__wide {
-    display: flex;
-  
-  }
-  
+
   .wide__footer__contacts--wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    padding-left: 4rem;
+    flex-direction: column;
+    padding-left: 1rem; // Adjust as needed
   }
-  
-  .footer__projects__list--wrapper {
-    text-decoration: none;
-    list-style: none;
-    font-size: 3rem;
-    
-  }
-  
-  .footer__projects__title {
-    text-transform: uppercase;
-    color: #fff;
-    font-weight: bold;
-    font-size: 3.5rem;
-    margin: 0 0 2rem 0;
-  }
-  
-  .footer__navigation--list {
-    text-decoration: none;
-    list-style: none;
-    font-size: 5rem;
-    color: #000;
-    text-transform: uppercase;
-  }
-  
+
   .footer__navigation--element {
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 3.5rem;
-    padding-right: 10rem;
-    text-align: right;
-    margin-bottom: 2rem;
+    font-size: 2rem; // Adjust as needed
+    padding-right: 1rem; // Adjust as needed
+    text-align: left;
+    margin-bottom: 1rem; // Adjust as needed
   }
-  
-  .footer__navigation__contact--link {
-    text-decoration: none;
-    color: #fff;
+
+  .footer__projects__title {
+    font-size: 2.5rem; // Adjust as needed
   }
-  
-  .footer__navigation--element:hover {
-    animation: moveInRightFooter;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-out;
-  }
-  
-  
-  .footer__projects__list--animated:hover {
-    animation: moveInLeftFooter;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-out;
-  
-  }
-  
+
   .footer__projects__list--link {
-    text-decoration: none;
-    color: #fff;
-    font-size: 2rem;
+    font-size: 1.5rem; // Adjust as needed
   }
-  
-  @keyframes moveInLeftFooter {
-    0% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-  
-    50% {
-        transform: translateX(5rem);
-    }
-  
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
+
+  .copywrite {
+    padding-left: 4rem; // Adjust as needed
   }
-  
-  
-  @keyframes moveInRightFooter {
-    0% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-  
-    50% {
-        transform: translateX(-5rem);
-    }
-  
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-    
-  }
-  
-  
-  .copywrite__link--footer {
-    font-size: 1.5rem;
-    font-weight: normal;
-    color: #fff;
-    cursor: default;
-  }
-  
-  .copywrite__link--footer:hover {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  
-  
+}

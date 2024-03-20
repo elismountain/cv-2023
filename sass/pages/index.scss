@@ -1,0 +1,137 @@
+/* main */
+
+.page__main--wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  
+  }
+  
+  .page__section {
+    display: block;
+  }
+  
+  .page__section--title {
+    /* display: flex; */
+    font-size: 6.4rem;
+    letter-spacing: 0.2rem;
+    color: black;
+    margin: 0 0 0 0;
+  }
+  
+  .pade__section--about {
+    font-size: 3rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    margin: 2rem 0 2rem 0;
+    letter-spacing: 0.35rem;
+    color: #828181;
+  
+  }
+  
+  .page__section--description {
+    font-size: 2.4rem;
+    color: #555;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+  }
+  
+
+  
+.projects__title {
+    color: #828181;
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 2.4rem;
+    letter-spacing: 0.35rem;
+  }
+  
+  .projects__list {
+    font-size: 4rem;
+    text-decoration: none;
+    padding-bottom: 1rem;
+  }
+  
+  .projects__list--wrapper {
+    text-decoration: none;
+    list-style-type: none;
+  }
+  
+  .portfolio__section {
+    display: flex;
+  }
+  
+  .projects__list--animated {
+    font-size: 4rem;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .projects__list--animated:hover {
+    animation: moveInLeft;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    color: blue;
+  
+  }
+  
+  .projects__list--link {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .projects__list--link:hover {
+    color: blue;
+  }
+
+  /* photoes showing up in the hover */
+
+
+.projects__img  {
+    position: absolute;
+    z-index: -1;
+    height: 70vh;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+    }
+    
+    .projects__img--cv, .projects__img--shop, .projects__img--sedona {
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+    }
+  
+    
+  
+  
+    .projects__img--fitness {
+      left: 50vw;
+      bottom: 10vh;
+      position: absolute;
+    }
+  
+  
+  
+    .projects__list--cv:hover + .projects__img--cv {
+      opacity: 0.2;
+    }
+  
+    .projects__list--shop:hover + .projects__img--shop {
+      opacity: 0.4;
+    }
+  
+    .projects__list--sedona:hover + .projects__img--sedona {
+      opacity: 0.4;
+    }
+  
+    .projects__list--fitness:hover + .projects__img--fitness {
+      opacity: 0.4;
+    }
+  
+
+
+
+  
