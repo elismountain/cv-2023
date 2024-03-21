@@ -4,7 +4,7 @@
 
 html {
   font-size: 62.5%;
-  height: 100%;
+  height: 100vh;
 }
 
 body {
@@ -13,6 +13,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: grey;
+  min-height: 100vh;
 }
 
 .page__body {
@@ -235,6 +236,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  bottom: 0;
 }
 
 .footer__contact {
@@ -663,7 +665,6 @@ body {
   color: red;
 }
 
-/* main */
 .page__main--wrapper {
   display: flex;
   flex-direction: row;
@@ -744,11 +745,10 @@ body {
   color: blue;
 }
 
-/* photoes showing up in the hover */
 .projects__img {
   position: absolute;
   z-index: -1;
-  height: 70vh;
+  height: 30vh;
   opacity: 0;
   transition: all 0.5s ease-out;
 }
@@ -765,6 +765,7 @@ body {
   left: 50vw;
   bottom: 10vh;
   position: absolute;
+  height: 70vh;
 }
 
 .projects__list--cv:hover + .projects__img--cv {

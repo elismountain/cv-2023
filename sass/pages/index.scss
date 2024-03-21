@@ -1,4 +1,4 @@
-/* main */
+// /* main */
 
 .page__main--wrapper {
     display: flex;
@@ -85,13 +85,13 @@
     color: blue;
   }
 
-  /* photoes showing up in the hover */
+//   /* photoes showing up in the hover */
 
 
 .projects__img  {
     position: absolute;
     z-index: -1;
-    height: 70vh;
+    height: 30vh;
     opacity: 0;
     transition: all 0.5s ease-out;
     }
@@ -111,6 +111,7 @@
       left: 50vw;
       bottom: 10vh;
       position: absolute;
+      height: 70vh;
     }
   
   
