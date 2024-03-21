@@ -9,10 +9,25 @@
     line-height: 3.5rem;
     text-align: center;
     padding: 5rem 0 10rem 0;
+
+    @media screen and (max-width: 768px) {
+      margin: 0 auto;
+      font-size: 1rem;
+      color: #3c3c3c;
+      padding: 4rem;
+      line-height: 2.5rem;
+      text-align: center;
+      padding: 5rem 0 10rem 0;
+  }
+    
   }
   
   .contact__header--primary {
     font-size: 6rem;
+
+    @media screen and (max-width: 768px) {
+      font-size: 3rem;
+  }
   }
   
   
@@ -21,6 +36,12 @@
     font-weight: bold;
     color: #3c3c3c;
     line-height: 4rem;
+
+    @media screen and (max-width: 768px) {
+      font-size: 2rem;
+  }
+
+    
   }
   
   .contact__link {

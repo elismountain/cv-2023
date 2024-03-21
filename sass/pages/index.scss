@@ -4,19 +4,35 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-  
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+    }
   }
-  
+
+
   .page__section {
     display: block;
+
+    @media screen and (max-width: 768px) {
+        padding: 0 3rem 0 3rem;
+    }
   }
   
   .page__section--title {
-    /* display: flex; */
+    display: flex; 
     font-size: 6.4rem;
     letter-spacing: 0.2rem;
     color: black;
     margin: 0 0 0 0;
+
+    @media screen and (max-width: 768px) {
+        font-size: 3.4rem;
+        letter-spacing: 0.2rem;
+        justify-content: start;
+    }
+
   }
   
   .pade__section--about {
@@ -26,7 +42,11 @@
     margin: 2rem 0 2rem 0;
     letter-spacing: 0.35rem;
     color: #828181;
-  
+
+    @media screen and (max-width: 768px) {
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+    }
   }
   
   .page__section--description {
@@ -34,6 +54,10 @@
     color: #555;
     font-weight: bold;
     letter-spacing: 0.05rem;
+
+    @media screen and (max-width: 768px) {
+        font-size: 2rem;
+    }
   }
   
 
@@ -44,12 +68,20 @@
     font-weight: bold;
     margin-bottom: 2.4rem;
     letter-spacing: 0.35rem;
+
+    @media screen and (max-width: 768px) {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        color: #302cf5;
+    }
+
   }
   
   .projects__list {
     font-size: 4rem;
     text-decoration: none;
     padding-bottom: 1rem;
+
   }
   
   .projects__list--wrapper {
@@ -66,6 +98,10 @@
     font-weight: bold;
     color: black;
     text-decoration: none;
+
+    @media screen and (max-width: 768px) {
+        font-size: 2.5rem;
+    }
   }
   
   .projects__list--animated:hover {
@@ -96,12 +132,36 @@
     transition: all 0.5s ease-out;
     }
     
-    .projects__img--cv, .projects__img--shop, .projects__img--sedona {
+    .projects__img--cv, .projects__img--sedona {
       left: 0;
       top: 0;
       width: 100vw;
       height: 100vh;
       object-fit: cover;
+
+      @media screen and (max-width: 768px) {
+        display: none;
+    }
+    }
+
+
+    .projects__img--shop {
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+
+
+        @media screen and (max-width: 768px) {
+            top: 60vw;
+            left: 20vw;
+            bottom: 10vh;
+            position: absolute;
+            height: 55vh;
+    
+        }
+
     }
   
     
@@ -112,6 +172,14 @@
       bottom: 10vh;
       position: absolute;
       height: 70vh;
+
+      @media screen and (max-width: 768px) {
+        left: 50vw;
+        bottom: 5vh;
+        position: absolute;
+        height: 50vh;
+
+    }
     }
   
   
@@ -134,5 +202,70 @@
   
 
 
+
+  
+
+// /* Main wrapper */
+// .page__main--wrapper {
+//     display: flex;
+//     flex-direction: column; /* Change to column for mobile */
+//     align-items: center; /* Center content horizontally */
+//   }
+  
+//   /* Adjustments for smaller screens */
+//   @media screen and (max-width: 768px) {
+//     .pade__section--about {
+//       text-align: center; /* Center text for smaller screens */
+//     }
+    
+//     .projects__list {
+//       font-size: 3.5rem; /* Reduce font size for smaller screens */
+//     }
+  
+//     .projects__list--animated {
+//       font-size: 3.5rem; /* Reduce font size for smaller screens */
+//     }
+  
+//     .projects__img {
+//       display: none; /* Hide images on smaller screens */
+//     }
+//   }
+  
+//   /* Remaining styles */
+//   .page__section {
+//     display: block;
+//   }
+  
+//   .page__section--title {
+//     font-size: 6.4rem;
+//     letter-spacing: 0.2rem;
+//     color: black;
+//     margin: 0;
+//   }
+  
+//   .pade__section--about {
+//     font-size: 3rem;
+//     font-family: "Roboto", sans-serif;
+//     font-weight: bold;
+//     margin: 2rem 0;
+//     letter-spacing: 0.35rem;
+//     color: #828181;
+//   }
+  
+//   .page__section--description {
+//     font-size: 2.4rem;
+//     color: #555;
+//     font-weight: bold;
+//     letter-spacing: 0.05rem;
+//   }
+  
+//   .projects__title {
+//     color: #828181;
+//     font-size: 2.4rem;
+//     font-weight: bold;
+//     margin-bottom: 2.4rem;
+//     letter-spacing: 0.35rem;
+//   }
+  
 
   
