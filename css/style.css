@@ -568,7 +568,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   .happyfiit--wrapper {
-    background-size: 105%;
+    background-size: 90%;
     background-position: top right;
   }
 }
@@ -648,6 +648,7 @@ body {
 @media screen and (max-width: 768px) {
   .happyfiit__intro--text {
     font-size: 1.8rem;
+    line-height: 3rem;
   }
 }
 
@@ -686,6 +687,7 @@ body {
   .happyfiit__ecs--text {
     font-size: 1.8rem;
     max-width: 120rem;
+    line-height: 3rem;
   }
 }
 
@@ -777,6 +779,7 @@ body {
   .happyfiit__tech--descr {
     font-size: 1.8rem;
     text-align: justify;
+    line-height: 3rem;
   }
 }
 
