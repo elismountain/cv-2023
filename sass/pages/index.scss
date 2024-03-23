@@ -152,15 +152,19 @@
         height: 100vh;
         object-fit: cover;
 
-
         @media screen and (max-width: 768px) {
-            top: 60vw;
-            left: 20vw;
-            bottom: 10vh;
-            position: absolute;
-            height: 55vh;
-    
+            display: none;
         }
+
+
+        // @media screen and (max-width: 768px) {
+        //     top: 60vw;
+        //     left: 20vw;
+        //     bottom: 10vh;
+        //     position: absolute;
+        //     height: 55vh;
+    
+        // }
 
     }
   
@@ -174,12 +178,16 @@
       height: 70vh;
 
       @media screen and (max-width: 768px) {
-        left: 50vw;
-        bottom: 5vh;
-        position: absolute;
-        height: 50vh;
-
+        display: none;
     }
+
+    //   @media screen and (max-width: 768px) {
+    //     left: 50vw;
+    //     bottom: 5vh;
+    //     position: absolute;
+    //     height: 50vh;
+
+    // }
     }
   
   

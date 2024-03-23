@@ -6,9 +6,10 @@
     font-size: 2rem;
     color: #3c3c3c;
     line-height: 3.5rem;
+    
   }
 
-  
+
   .happyfiit-list {
     list-style: none;
   }
@@ -19,6 +20,10 @@
     padding: 0 0 0 0;
     font-size: 3.6rem;
     color: #423d3d;
+
+    @media screen and (max-width: 768px) {
+      font-size: 2rem;
+  }
   }
 
 
@@ -38,14 +43,20 @@
     top: 20vw;
     left: 10vw;
     bottom: 20vh;
+    padding: 0 2rem 0 2rem;
     }
 
     .happyfiit__header {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-      // max-width: 180rem;
       padding-bottom: 5rem;
+
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+        padding: 2rem;
+        padding-bottom: 0;
+    }
 
     }
 
@@ -56,6 +67,10 @@
       top: 10vw;
       left: 10vw;
       bottom: 20vh;
+
+      @media screen and (max-width: 768px) {
+        display: none;
+    }
     }
 
     .happyfiit--wrapper {
@@ -63,11 +78,24 @@
       background-repeat: no-repeat;
       background-position: top right;
       background-size: 65%;
+      
+      
+      @media screen and (max-width: 768px) {
+        background-size: 105%;
+        background-position: top right;
+        
+    }
+
+      
     }
 
     .happyfiit__logo {
       margin-top: 20rem;
       margin-right: 20rem;
+
+      @media screen and (max-width: 768px) {
+        margin: 0;
+    }
 
     }
 
@@ -88,11 +116,19 @@
       color: #423d3d;
       letter-spacing: 1.5px;
 
+      @media screen and (max-width: 768px) {
+        font-size: 2rem;
+    }
+
     }
 
     .happyfiit__descr--small {
       font-size: 2.6rem;
       letter-spacing: 1.5px;
+
+      @media screen and (max-width: 768px) {
+        font-size: 1.5rem;
+    }
 
     }
 
@@ -102,15 +138,34 @@
       justify-content: space-around;
       padding-top: 5rem;
       padding-bottom: 10rem;
+
+
+      @media screen and (max-width: 768px) {
+        flex-direction: column-reverse;
+        padding-top: 0;
+        padding-bottom: 1rem;
+      }
     }
 
     .happyfiit__intro--right{
       margin-top: 5rem;
-      max-width: 100rem;
+      max-width: 95vh;
+
+      @media screen and (max-width: 768px) {
+        margin-top: 0;
+        padding: 2rem;
+        
+      }
     }
+
 
     .happyfiit__intro--text {
       font-size: 2.6rem;
+      text-align: justify;
+
+      @media screen and (max-width: 768px) {
+        font-size: 1.8rem;
+      }
     }
 
     .happyfiit__intro--title {
@@ -120,6 +175,10 @@
       font-size: 3.6rem;
       color: #423d3d;
 
+      @media screen and (max-width: 768px) {
+        font-size: 2rem;
+      }
+
     }
 
     .happyfiit__ecs {
@@ -128,11 +187,23 @@
       justify-content: space-around;
       margin-left: 5rem;
 
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
     }
 
     .happyfiit__ecs--text {
-      max-width: 100rem;
+      max-width: 65rem;
       font-size: 2.6rem;
+      text-align: justify;
+
+      @media screen and (max-width: 768px) {
+        font-size: 1.8rem;
+        max-width: 120rem;
+        
+      }
 
     }
 
@@ -141,7 +212,17 @@
       max-width: 100rem;
       margin-top: 10rem;
       margin-right: 5rem;
-      padding-left: 5rem;
+
+      @media screen and (max-width: 768px) {
+        margin-left: 0;
+        margin-top: 0;
+        margin-right: 0;
+        padding: 2rem;
+    }
+    }
+
+    .draw__img {
+      max-width: 95vh;
     }
 
 
@@ -157,6 +238,10 @@
       font-size: 3.6rem;
       color: #423d3d;
 
+      @media screen and (max-width: 768px) {
+        font-size: 2rem;
+      }
+
     }
 
 
@@ -167,6 +252,10 @@
       background-image: url("../../images/polygon2.svg");
       background-repeat: no-repeat;
       background-size: 100%;
+
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
     }
     
 
@@ -179,6 +268,10 @@
       margin-top: 18rem;
       margin-right: 20rem;
 
+      @media screen and (max-width: 768px) {
+        display: none;
+    }
+
     }
     
     .happyfiit-list__item {
@@ -186,11 +279,18 @@
       height: 14rem;
       font-size: 1.8rem;
       color: #fff;
+
+
     }
 
     .happyfiit__tech--title {
       padding-left: 10rem;
       padding-top: 14rem;
+
+      @media screen and (max-width: 768px) {
+        padding: 2rem;
+
+      }
     }
 
 
@@ -199,7 +299,19 @@
       max-width: 60rem;
       font-size: 2.6rem;
 
+      @media screen and (max-width: 768px) {
+        font-size: 1.8rem;
+        text-align: justify;
+      }
+
     }
     
 
 
+.happyfiit__tech--deploy {
+
+  @media screen and (max-width: 768px) {
+    margin-top: 6rem;
+  }
+
+}

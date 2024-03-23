@@ -508,6 +508,11 @@ body {
   font-size: 3.6rem;
   color: #423d3d;
 }
+@media screen and (max-width: 768px) {
+  .happyfiit__title {
+    font-size: 2rem;
+  }
+}
 
 .happyfiit__img--container {
   text-align: center;
@@ -524,6 +529,7 @@ body {
   top: 20vw;
   left: 10vw;
   bottom: 20vh;
+  padding: 0 2rem 0 2rem;
 }
 
 .happyfiit__header {
@@ -531,6 +537,13 @@ body {
   flex-direction: row;
   justify-content: space-around;
   padding-bottom: 5rem;
+}
+@media screen and (max-width: 768px) {
+  .happyfiit__header {
+    flex-direction: column;
+    padding: 2rem;
+    padding-bottom: 0;
+  }
 }
 
 .happyfiit__img2 {
@@ -541,6 +554,11 @@ body {
   left: 10vw;
   bottom: 20vh;
 }
+@media screen and (max-width: 768px) {
+  .happyfiit__img2 {
+    display: none;
+  }
+}
 
 .happyfiit--wrapper {
   background-image: url("../../images/polygon1.svg");
@@ -548,10 +566,21 @@ body {
   background-position: top right;
   background-size: 65%;
 }
+@media screen and (max-width: 768px) {
+  .happyfiit--wrapper {
+    background-size: 105%;
+    background-position: top right;
+  }
+}
 
 .happyfiit__logo {
   margin-top: 20rem;
   margin-right: 20rem;
+}
+@media screen and (max-width: 768px) {
+  .happyfiit__logo {
+    margin: 0;
+  }
 }
 
 .happyfiit__logo--wrapper {
@@ -570,10 +599,20 @@ body {
   color: #423d3d;
   letter-spacing: 1.5px;
 }
+@media screen and (max-width: 768px) {
+  .happyfiit__descr {
+    font-size: 2rem;
+  }
+}
 
 .happyfiit__descr--small {
   font-size: 2.6rem;
   letter-spacing: 1.5px;
+}
+@media screen and (max-width: 768px) {
+  .happyfiit__descr--small {
+    font-size: 1.5rem;
+  }
 }
 
 .happyfiit__intro {
@@ -583,14 +622,33 @@ body {
   padding-top: 5rem;
   padding-bottom: 10rem;
 }
+@media screen and (max-width: 768px) {
+  .happyfiit__intro {
+    flex-direction: column-reverse;
+    padding-top: 0;
+    padding-bottom: 1rem;
+  }
+}
 
 .happyfiit__intro--right {
   margin-top: 5rem;
-  max-width: 100rem;
+  max-width: 95vh;
+}
+@media screen and (max-width: 768px) {
+  .happyfiit__intro--right {
+    margin-top: 0;
+    padding: 2rem;
+  }
 }
 
 .happyfiit__intro--text {
   font-size: 2.6rem;
+  text-align: justify;
+}
+@media screen and (max-width: 768px) {
+  .happyfiit__intro--text {
+    font-size: 1.8rem;
+  }
 }
 
 .happyfiit__intro--title {
@@ -600,6 +658,11 @@ body {
   font-size: 3.6rem;
   color: #423d3d;
 }
+@media screen and (max-width: 768px) {
+  .happyfiit__intro--title {
+    font-size: 2rem;
+  }
+}
 
 .happyfiit__ecs {
   display: flex;
@@ -607,17 +670,41 @@ body {
   justify-content: space-around;
   margin-left: 5rem;
 }
+@media screen and (max-width: 768px) {
+  .happyfiit__ecs {
+    flex-direction: column;
+    margin-left: 0;
+  }
+}
 
 .happyfiit__ecs--text {
-  max-width: 100rem;
+  max-width: 65rem;
   font-size: 2.6rem;
+  text-align: justify;
+}
+@media screen and (max-width: 768px) {
+  .happyfiit__ecs--text {
+    font-size: 1.8rem;
+    max-width: 120rem;
+  }
 }
 
 .happyfiit__ecs--left {
   max-width: 100rem;
   margin-top: 10rem;
   margin-right: 5rem;
-  padding-left: 5rem;
+}
+@media screen and (max-width: 768px) {
+  .happyfiit__ecs--left {
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    padding: 2rem;
+  }
+}
+
+.draw__img {
+  max-width: 95vh;
 }
 
 .happyfiit__list {
@@ -631,6 +718,11 @@ body {
   font-size: 3.6rem;
   color: #423d3d;
 }
+@media screen and (max-width: 768px) {
+  .happyfiit__tech {
+    font-size: 2rem;
+  }
+}
 
 .happyfiit__tech--wrapper {
   display: flex;
@@ -640,6 +732,11 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
 }
+@media screen and (max-width: 768px) {
+  .happyfiit__tech--wrapper {
+    flex-direction: column;
+  }
+}
 
 .happyfiit__list {
   display: flex;
@@ -648,6 +745,11 @@ body {
   max-width: 50rem;
   margin-top: 18rem;
   margin-right: 20rem;
+}
+@media screen and (max-width: 768px) {
+  .happyfiit__list {
+    display: none;
+  }
 }
 
 .happyfiit-list__item {
@@ -661,10 +763,27 @@ body {
   padding-left: 10rem;
   padding-top: 14rem;
 }
+@media screen and (max-width: 768px) {
+  .happyfiit__tech--title {
+    padding: 2rem;
+  }
+}
 
 .happyfiit__tech--descr {
   max-width: 60rem;
   font-size: 2.6rem;
+}
+@media screen and (max-width: 768px) {
+  .happyfiit__tech--descr {
+    font-size: 1.8rem;
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .happyfiit__tech--deploy {
+    margin-top: 6rem;
+  }
 }
 
 /* page contacts */
@@ -866,11 +985,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   .projects__img--shop {
-    top: 60vw;
-    left: 20vw;
-    bottom: 10vh;
-    position: absolute;
-    height: 55vh;
+    display: none;
   }
 }
 
@@ -882,10 +997,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   .projects__img--fitness {
-    left: 50vw;
-    bottom: 5vh;
-    position: absolute;
-    height: 50vh;
+    display: none;
   }
 }
 
